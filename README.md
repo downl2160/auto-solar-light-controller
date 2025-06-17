@@ -36,12 +36,6 @@ A simplified conceptual schematic is available:
 
 ---
 
-📁 `code/ldr_ir_lamp_control.ino`  
-- Demonstrates LDR + IR logic  
-- Switches a digital pin (for relay/transistor control)
-
----
-
 ## 📸 Prototype Images
 
 📁 `images/` contains real photos of the working prototype.  
