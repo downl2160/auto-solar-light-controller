@@ -1,62 +1,62 @@
-# 🌞 Auto Solar Street Light Controller
+# 🌞 Auto Solar Street Light Controller (Analog)
 
-An automatic street lighting system designed using an LDR (Light Dependent Resistor) and optional IR sensor. This project turns the light ON during low ambient light (e.g., night) and OFF during the day — simulating real-world energy-efficient solar streetlights. Motion-triggered brightening using IR sensor is optionally supported.
+A simple, analog street lighting system that automatically turns lights ON at night and OFF during daylight using an LDR-based sensing mechanism. Built entirely using analog components (no microcontroller or code), the project showcases the use of voltage dividers, comparators, and relay-based switching.
 
 ---
 
 ## ✅ Features
 
-- Automatic **night ON / day OFF** functionality using LDR
-- Optional **motion-based activation** using IR sensor
-- Simple analog circuit with **op-amp comparator logic**
-- Can be implemented with **relay or transistor-based switching**
-- Cost-effective and ideal for school, rural, or academic demos
+- Lights turn ON automatically when ambient light is low (night)
+- Lights turn OFF when sunlight is sufficient (day)
+- Built with **only analog components** — no coding required
+- Energy-efficient, cost-effective solution for rural or small-scale implementations
 
 ---
 
-## 🛠️ Technologies & Components Used
+## 🛠️ Components Used
 
-| Component                        | Purpose                                                 |
-|----------------------------------|---------------------------------------------------------|
-| **LDR**                          | Detects ambient light (day/night threshold)             |
-| **IR Sensor (optional)**         | Detects motion to activate or brighten the lamp         |
-| **Relay Module / Transistor**    | Acts as the switching device for AC/DC load             |
-| **LM358 / Comparator Op-Amp**    | Converts analog LDR signal to ON/OFF logic              |
-| **Power Supply (5V/12V)**        | Drives logic circuit and switching component            |
-| **Breadboard / PCB**             | Circuit assembly and testing                            |
-
----
-
-## 🔧 Circuit
-
-A simplified conceptual schematic is available:
-
-📁 `circuit/schematic.png`  
-> *(Add your real schematic image to this path)*
+| Component                     | Purpose                                              |
+|-------------------------------|------------------------------------------------------|
+| **LDR (Light Dependent Resistor)** | Detects ambient light level                         |
+| **LM358 Comparator (Op-Amp)** | Compares voltage from LDR with reference threshold   |
+| **Relay Module / Transistor** | Switches high-voltage light ON/OFF                  |
+| **Resistors / Potentiometer** | Sets sensitivity and threshold levels               |
+| **Power Supply (5V/12V)**     | Powers the analog logic and relay coil              |
+| **Breadboard / PCB**          | Circuit assembly and testing platform               |
 
 ---
 
-## 📸 Prototype Images
+## 🔧 Circuit Diagrams
 
-📁 `images/` contains real photos of the working prototype.  
-> *(e.g., breadboard setup, IR placement, relay switching, etc.)*
+- [Download Schematic](./circuit/schematic.png)  
+- [View Simulation (if available)](./circuit/simulation.jpg)
+
+> The schematic illustrates the voltage divider formed by the LDR and fixed resistor, feeding into a comparator that toggles the relay.
+
+---
+
+## 📸 Prototype
+
+- [View Breadboard/Prototype Photo](./images/prototype_photo.jpg)
+
+This image shows the actual implementation with relay, op-amp, LDR sensor, and LED/lamp as output.
 
 ---
 
 ## 🎓 Learning Outcomes
 
-- Analog signal sensing with LDR
-- Comparator threshold switching (LM358)
-- Relay/transistor switching for AC/DC loads
-- Understanding of day-night automation
-- Optional: motion-triggered lighting via IR sensor
+- Analog sensing and threshold switching
+- Comparator-based decision logic (LM358)
+- Use of relays/transistors to control AC/DC loads
+- Real-world application of LDR-based control systems
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-> Created by **Siddharth Singh** — for academic and energy-efficiency applications.  
+> Developed by **Siddharth Singh**  
+> Part of core electrical project showcase for energy-efficient automation.
