@@ -28,18 +28,9 @@ A simple, analog street lighting system that automatically turns lights ON at ni
 
 ## 🔧 Circuit Diagrams
 
-- [Download Schematic](./circuit/schematic.png)  
-- [View Simulation (if available)](./circuit/simulation.jpg)
+- [Download Schematic](./Circuit/schematic.png)  
 
 > The schematic illustrates the voltage divider formed by the LDR and fixed resistor, feeding into a comparator that toggles the relay.
-
----
-
-## 📸 Prototype
-
-- [View Breadboard/Prototype Photo](./images/prototype_photo.jpg)
-
-This image shows the actual implementation with relay, op-amp, LDR sensor, and LED/lamp as output.
 
 ---
 
